@@ -117,6 +117,7 @@ Finally we can create new agent.
 ```bash
 $ yc loadtesting agent create \
   --name my-agent \
+  --labels origin=default,label-key=label-value \
   --zone $LT_ZONE_ID \
   --network-interface subnet-id=$SUBNET_ZONE_A_ID,security-group-ids=$AGENT_SG_ID \
   --cores 2 \
